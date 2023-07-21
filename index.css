@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1,h4{
+    text-align: center;
+}
+h4{
+    border-bottom: 2px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.quiz-details{
+    text-align: center;
+}
+.quiz-details p{
+   text-align: center; 
+   margin-top: 20px;
+   padding: 5px;
+}
+.quiz-details h2{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.quiz-details .quiz-description{
+    list-style: none;
+}
+.quiz-details .list-of-quizes{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 575px;
+    width: 300px;
+}
+.list-of-quizes button{
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 5px;
+}
+table {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+thead th {
+    background-color: #b4b1b1;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+tbody th {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #3f6be3;
+    padding: 1px 15px;
+    border-radius: 5px;
+    position: relative;
+}

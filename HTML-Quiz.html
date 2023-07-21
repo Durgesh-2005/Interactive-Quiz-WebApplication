@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./HTML-Quiz.css">
+    <title>HTML Quiz</title>
+</head>
+
+<body>
+    <h1>HTML-Basic Quiz</h1>
+    <div class="quiz-questions">
+        <form class="user-details" action="">
+            <section>
+                <label for="name">Enter Your Name:</label>
+                <input type="text" placeholder="Enter Name" name="" id="name">
+            </section>
+            <section>
+                <label for="email">Enter your Email:</label>
+                <input type="email" name="" id="email" placeholder="Enter Email">
+            </section>
+        </form>
+        <div class="quiz-container">
+            <div class="question1"></div>
+            <div class="options1">
+                <div class="option-1">
+                    <input type="checkbox" id="option1-1">
+                    <label for="option1-1"></label>
+                </div>
+                <div class="option-2">
+                    <input type="checkbox" id="option1-2">
+                    <label for="option1-2"></label>
+                </div>
+                <div class="option-3">
+                    <input type="checkbox" id="option1-3">
+                    <label for="option1-3"></label>
+                </div>
+                <div class="option-4">
+                    <input type="checkbox" id="option1-4">
+                    <label for="option1-4"></label>
+                </div>
+            </div>
+            <div class="question2"></div>
+            <div class="options2">
+                <div class="option-1">
+                    <input type="checkbox" id="option2-1">
+                    <label for="option2-1"></label>
+                </div>
+                <div class="option-2">
+                    <input type="checkbox" id="option2-2">
+                    <label for="option2-2"></label>
+                </div>
+                <div class="option-3">
+                    <input type="checkbox" id="option2-3">
+                    <label for="option2-3"></label>
+                </div>
+                <div class="option-4">
+                    <input type="checkbox" id="option2-4">
+                    <label for="option2-4"></label>
+                </div>
+            </div>
+            <button onclick="checkAnswers()" id="submit-btn">Submit</button>
+            <div class="result"></div>
+        </div>
+    </div>
+
+    <script src="./HTML-Quiz.js"></script>
+</body>
+
+</html>
