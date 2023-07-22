@@ -239,20 +239,7 @@
             <div class="result"></div>
         </div>
 
-        <script>
-            //This Script is Makes the Checkbox To Behave Like a Radio Button the user can be able to opt only a single answer
-            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-
-            checkboxes.forEach((checkbox) => {
-                checkbox.addEventListener('click', () => {
-                    checkboxes.forEach((otherCheckbox) => {
-                        if (otherCheckbox !== checkbox) {
-                            otherCheckbox.checked = false;
-                        }
-                    });
-                });
-            });
-        </script>
+       
         <script src="./CSS-Quiz.js"></script>
 </body>
 
