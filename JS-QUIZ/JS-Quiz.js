@@ -247,8 +247,8 @@ function checkAnswers() {
 
     submitBtn.disabled = true;
   } else {
-    alert("Select Only ONE option for each Question")
-    resultElement.textContent = 'Please select one option for each question.';
+    alert("Select ONE option for each Question")
+    resultElement.textContent = '';
   }
   document.getElementById("score-card").style.display = "block";
   function calculateScore() {
