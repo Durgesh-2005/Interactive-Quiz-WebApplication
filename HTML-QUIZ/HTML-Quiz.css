@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+}
+
+.score-card {
+  border: 2px solid black;
+  border-radius: 5px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  display: none;
+
+}
+
+#score-card h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#retake-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.quiz-questions {
+  border: 2px solid black;
+  border-radius: 5px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  border-bottom: 2px solid black;
+  text-align: center;
+  padding: 15px;
+}
+
+label {
+  color: #333;
+}
+
+.quiz-questions input[type="text"],
+input[type="email"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.user-details {
+  text-align: center;
+}
+
+.quiz-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.question1,
+.question2,
+.question3,
+.question4,
+.question5,
+.question6,
+.question7,
+.question8,
+.question9,
+.question10 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.options1,
+.options2,
+.options3,
+.options4,
+.options5,
+.options6,
+.options7,
+.options8,
+.options9,
+.options10 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  margin-bottom: 15px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+#submit-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.result {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.correct-answer {
+  color: green;
+  /* Change the color to indicate correct answer */
+  font-weight: bold;
+}
+
+.wrong-answer {
+  color: red;
+  /* Change the color to indicate wrong answer */
+  text-decoration: line-through;
+}
+
+/* CSS for tick and cross marks */
+label::before {
+  content: "";
+}
+
+.correct-answer::before {
+  content: "✓";
+  color: green;
+  margin-right: 5px;
+}
+
+.wrong-answer::before {
+  content: "✗";
+  color: red;
+  margin-right: 5px;
+}
+
+@media (max-width:750px) {
+  .score-card {
+    max-width: 350px;
+  }
+
+  .quiz-questions {
+    max-width: 350px;
+  }
+
+  .quiz-container {
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}

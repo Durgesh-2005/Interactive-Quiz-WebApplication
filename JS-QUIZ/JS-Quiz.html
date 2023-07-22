@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../HTML-QUIZ/HTML-Quiz.css">
+    <title>JavaScript Quiz</title>
+</head>
+
+<body>
+    <h1>JS-Basic Quiz</h1>
+    <div class="score-card" id="score-card">
+        <h2 id="score">TOTAL SCORE = </h2>
+        <button id="retake-btn">Retake Test</button>
+    </div>
+    <div class="quiz-questions">
+        <!--
+         <form class="user-details" action="">
+            <section>
+                <label for="name">Enter Your Name:</label>
+                <input type="text" placeholder="Enter Name" name="" id="name" required>
+            </section>
+            <section>
+                <label for="email">Enter your Email:</label>
+                <input type="email" name="" id="email" placeholder="Enter Email" required>
+            </section>
+        </form>
+       -->
+        <div class="quiz-container">
+            <!--Question-1-->
+            <div class="question1"></div>
+            <div class="options1">
+                <div class="option-1">
+                    <input type="checkbox" id="option1-1">
+                    <label for="option1-1"></label>
+                </div>
+                <div class="option-2">
+                    <input type="checkbox" id="option1-2">
+                    <label for="option1-2"></label>
+                </div>
+                <div class="option-3">
+                    <input type="checkbox" id="option1-3">
+                    <label for="option1-3"></label>
+                </div>
+                <div class="option-4">
+                    <input type="checkbox" id="option1-4">
+                    <label for="option1-4"></label>
+                </div>
+            </div>
+            <!--Question-2-->
+            <div class="question2"></div>
+            <div class="options2">
+                <div class="option-1">
+                    <input type="checkbox" id="option2-1">
+                    <label for="option2-1"></label>
+                </div>
+                <div class="option-2">
+                    <input type="checkbox" id="option2-2">
+                    <label for="option2-2"></label>
+                </div>
+                <div class="option-3">
+                    <input type="checkbox" id="option2-3">
+                    <label for="option2-3"></label>
+                </div>
+                <div class="option-4">
+                    <input type="checkbox" id="option2-4">
+                    <label for="option2-4"></label>
+                </div>
+            </div>
+            <!--Question-3-->
+            <div class="question3"></div>
+            <div class="options3">
+                <div class="option-1">
+                    <input type="checkbox" id="option3-1">
+                    <label for="option3-1"></label>
+                </div>
+                <div class="option-2">
+                    <input type="checkbox" id="option3-2">
+                    <label for="option3-2"></label>
+                </div>
+                <div class="option-3">
+                    <input type="checkbox" id="option3-3">
+                    <label for="option3-3"></label>
+                </div>
+                <div class="option-4">
+                    <input type="checkbox" id="option3-4">
+                    <label for="option3-4"></label>
+                </div>
+            </div>
+            <!--Question-4-->
+            <div class="question4"></div>
+            <div class="options4">
+                <div class="option-1">
+                    <input type="checkbox" id="option4-1">
+                    <label for="option4-1"></label>
+                </div>
+                <div class="option-2">
+                    <input type="checkbox" id="option4-2">
+                    <label for="option4-2"></label>
+                </div>
+                <div class="option-3">
+                    <input type="checkbox" id="option4-3">
+                    <label for="option4-3"></label>
+                </div>
+                <div class="option-4">
+                    <input type="checkbox" id="option4-4">
+                    <label for="option4-4"></label>
+                </div>
+            </div>
+            <!--Question-5-->
+            <div class="question5"></div>
+            <div class="options5">
+                <div class="option-1">
+                    <input type="checkbox" id="option5-1">
+                    <label for="option5-1"></label>
+                </div>
+                <div class="option-2">
+                    <input type="checkbox" id="option5-2">
+                    <label for="option5-2"></label>
+                </div>
+                <div class="option-3">
+                    <input type="checkbox" id="option5-3">
+                    <label for="option5-3"></label>
+                </div>
+                <div class="option-4">
+                    <input type="checkbox" id="option5-4">
+                    <label for="option5-4"></label>
+                </div>
+            </div>
+            <!--Question-6-->
+            <div class="question6"></div>
+            <div class="options6">
+                <div class="option-1">
+                    <input type="checkbox" id="option6-1">
+                    <label for="option6-1"></label>
+                </div>
+                <div class="option-2">
+                    <input type="checkbox" id="option6-2">
+                    <label for="option6-2"></label>
+                </div>
+                <div class="option-3">
+                    <input type="checkbox" id="option6-3">
+                    <label for="option6-3"></label>
+                </div>
+                <div class="option-4">
+                    <input type="checkbox" id="option6-4">
+                    <label for="option6-4"></label>
+                </div>
+            </div>
+            <!--Question-7-->
+            <div class="question7"></div>
+            <div class="options7">
+                <div class="option-1">
+                    <input type="checkbox" id="option7-1">
+                    <label for="option7-1"></label>
+                </div>
+                <div class="option-2">
+                    <input type="checkbox" id="option7-2">
+                    <label for="option7-2"></label>
+                </div>
+                <div class="option-3">
+                    <input type="checkbox" id="option7-3">
+                    <label for="option7-3"></label>
+                </div>
+                <div class="option-4">
+                    <input type="checkbox" id="option7-4">
+                    <label for="option7-4"></label>
+                </div>
+            </div>
+            <!--Question-8-->
+            <div class="question8"></div>
+            <div class="options8">
+                <div class="option-1">
+                    <input type="checkbox" id="option8-1">
+                    <label for="option8-1"></label>
+                </div>
+                <div class="option-2">
+                    <input type="checkbox" id="option8-2">
+                    <label for="option8-2"></label>
+                </div>
+                <div class="option-3">
+                    <input type="checkbox" id="option8-3">
+                    <label for="option8-3"></label>
+                </div>
+                <div class="option-4">
+                    <input type="checkbox" id="option8-4">
+                    <label for="option8-4"></label>
+                </div>
+            </div>
+            <!--Question-9-->
+            <div class="question9"></div>
+            <div class="options9">
+                <div class="option-1">
+                    <input type="checkbox" id="option9-1">
+                    <label for="option9-1"></label>
+                </div>
+                <div class="option-2">
+                    <input type="checkbox" id="option9-2">
+                    <label for="option9-2"></label>
+                </div>
+                <div class="option-3">
+                    <input type="checkbox" id="option9-3">
+                    <label for="option9-3"></label>
+                </div>
+                <div class="option-4">
+                    <input type="checkbox" id="option9-4">
+                    <label for="option9-4"></label>
+                </div>
+            </div>
+            <!--Question-4-->
+            <div class="question10"></div>
+            <div class="options10">
+                <div class="option-1">
+                    <input type="checkbox" id="option10-1">
+                    <label for="option10-1"></label>
+                </div>
+                <div class="option-2">
+                    <input type="checkbox" id="option10-2">
+                    <label for="option10-2"></label>
+                </div>
+                <div class="option-3">
+                    <input type="checkbox" id="option10-3">
+                    <label for="option10-3"></label>
+                </div>
+                <div class="option-4">
+                    <input type="checkbox" id="option10-4">
+                    <label for="option10-4"></label>
+                </div>
+            </div>
+            <button id="submit-btn">Submit</button>
+            <div class="result"></div>
+        </div>
+
+
+        <script src="./JS-Quiz.js"></script>
+</body>
+
+</html>
